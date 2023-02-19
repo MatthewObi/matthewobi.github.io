@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Matthew Obi's Homepage</title>
+    <link rel="stylesheet" href="css/basic.css"/>
+</head>
+<body style="height: 100%">
+    <span style="text-align: center;">
+        <h1>mattobi.dev</h1>
+        <p id="time"></p>
+        <script>
+            setInterval(() => {
+                let b = document.getElementById("time");
+                let d = new Date();
+                b.innerHTML = "It is currently<br/>"
+                b.innerHTML += d.toTimeString();
+                b.innerHTML += "<br/>where I live.";
+            }, 1.0);
+        </script>
+        <span style="text-align:left;">
+            <h3>About me</h3>
+            <p>Hello, there! My name is Matthew Obi. I am a programmer with a B.S. in Computer Science. 
+                Programming is a very big interest of mine. Took a very big interest in video game and emulator development, and especially low level development. 
+            </p>
+            <p>Below are some links to various things about me and my projects:</p>
+            <ul style="text-align: center;">
+                <li><a href="https://github.com/MatthewObi">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/matthew-obi-3321081a8">Linkedin</a></li>
+                <li><a href="./chip8/emulator.html">CHIP-8</a> - A CHIP-8 emulator in the web browser (Try it out!)</li>
+            </ul>
+        </span>
+    </span>
+</body>
+<footer>
+    <small>&copy; 2023 Matthew Obi</small>
+</footer>
+</html>
