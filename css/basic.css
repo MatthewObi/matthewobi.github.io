@@ -33,6 +33,10 @@ a:link {
     color: #007fff;
 }
 
+a:visited {
+    color: #7f00ff;
+}
+
 textarea {
     background-color: #2f2f2f;
     color: #9fff9f;
