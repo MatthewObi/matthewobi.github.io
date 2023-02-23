@@ -2,6 +2,7 @@
 <html lang="en"> 
 <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CHIP-8 - Emulator</title>
     <link rel="stylesheet" href="../css/basic.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,7 +21,7 @@
     <hr/>
 </header>
 <body style="height: 100%">
-    <div style="float:left; height: 100%">
+    <div id="fleft">
         <p>Emulator:</p>
         <canvas id="game" width=640 height=420></canvas>
         <br/>
@@ -358,14 +359,14 @@
             init();
         </script>
     </div>
-    <div style="float:right; height: 100%;">
-        <div style="float:left">
+    <div id="fright">
+        <div id="fleft">
             <p>Load Chip8 ROM:</p>
             <input id="file-input" type="file" /><br/>
             <input id='btnLoad' type="button" value="Load"/>
             <input id='btnDisassemble' type="button" value="Disassemble"/>
         </div>
-        <div style="float:right">
+        <div id="fright">
             <p>Assembly code:</p>
             <textarea id='assembly' rows="16" cols="75" name="code" placeholder="Enter text">start:
 ld i, @sprite
